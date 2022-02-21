@@ -1,0 +1,31 @@
+{
+  "name": "ahmed-ibrahimm/paytabs-with-laravel",
+  "version": "1.0.0",
+  "license": "LGPL-3.0",
+  "description": "Paytabs with Laravel",
+  "authors": [
+    {
+      "name": "Ahmed Mohamed",
+      "email": "ahmed_noreldin@outlook.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "~8.75"
+  },
+  "autoload": {
+    "psr-0": {
+      "Paytabs": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Paytabs\\PaytabsServiceProvider"
+      ],
+      "aliases": {
+        "Paytabs": "Paytabs\\Facades\\PaytabsFacade"
+      }
+    }
+  }
+}
